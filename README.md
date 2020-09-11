@@ -1,8 +1,6 @@
-# React-typewriter-effect
+# rpadaki/react-typewriter-effect
 
-A package that gives your text a typing effect
-
-### Use case scenario
+A package that gives your text a typing effect, with extra features like looping multitext! Forked from [kevoese/react-typewriter-effect](https://github.com/kevoese/react-typewriter-effect).
 
 ## Description
 
@@ -53,7 +51,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 ### For a multiiple text display
 
-Set the muultiText props to an array of strings which are displayed sequentially
+Set the multiText props to an array of strings which are displayed sequentially
 
 ```
 import TypeWriterEffect from 'react-typewriter-effect';
@@ -74,6 +72,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
           'Fonts can be customized.',
           'The type speed can be customized as well',
         ]}
+        loop={true}
         multiTextDelay={1000}
         typeSpeed={30}
       />
@@ -91,6 +90,8 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 - multiTextDelay (must be a number): delay before each text is erased in multi text display in milli seconds.
 
+- loop: (a boolean): if true, continuously cycle through the text. Default: false
+
 - typeSpeed (must be a number): Speed of typing in milli seconds,
 
 - startDelay (must be a number): Delay before animation starts in milli seconds
@@ -102,4 +103,3 @@ import TypeWriterEffect from 'react-typewriter-effect';
 - textStyle (must be an object): custom css styles can be applied to the text in this object.
 
 - scrollArea (must be a dom element): the scrollable area. By default it is document
-

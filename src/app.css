@@ -11,11 +11,12 @@
 }
 
 .add-cursor-animate {
-    animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -24,5 +25,5 @@
 }
 
 .hide-typing-cursor {
-    padding: 0;
+  padding: 0;
 }
