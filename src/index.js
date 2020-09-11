@@ -119,6 +119,7 @@ class TypeWriterEffect extends Component {
 
   componentWillUnmount() {
     // unsubscribe from timeouts and events
+    this.state.loop = false;
     this.props.scrollArea && typeof this.props.scrollArea == "object"
       ? this.props.scrollArea.removeEventListener(
           "scroll",
