@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "prepare": "rimraf dist && webpack",
+    "prepare": "npm run build",
     "build": "rimraf dist && webpack && echo \"declare module 'react-typewriter-effect';\" > dist/index.d.ts"
   },
   "repository": {
