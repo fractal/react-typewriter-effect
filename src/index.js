@@ -49,7 +49,7 @@ class TypeWriterEffect extends Component {
         blink: true,
       });
       this.props.multiText && (await multiTextDelay.getPromise());
-      erase > 0 && (await this.eraseText(text));
+      (erase > 0 || this.props.loop) && (await this.eraseText(text));
     }
   };
 
