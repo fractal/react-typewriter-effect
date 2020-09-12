@@ -32,6 +32,12 @@ class TypeWriterEffect extends Component {
       });
       let text = "";
       const typeSpeedDelay = new delay(this.props.typeSpeed || 120);
+      console.log(
+        this.props.multiText,
+        this.state.looping,
+        this.props.multiText || this.state.looping,
+        "wat"
+      );
       const nextTextDelay =
         (this.props.multiText || this.state.looping) &&
         new delay(this.props.nextTextDelay || 2000);
