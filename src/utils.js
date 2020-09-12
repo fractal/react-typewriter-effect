@@ -42,7 +42,7 @@ export class makeCancelable {
 }
 
 export const propTypeValidation = {
-  multiTextDelay: (props, propName) => {
+  nextTextDelay: (props, propName) => {
     if (props[propName] && typeof props[propName] != "number")
       return new Error(
         `Invalid ${propName} supplied to react-type-writer-component component.`

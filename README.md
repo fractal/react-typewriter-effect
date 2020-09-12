@@ -73,7 +73,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
           'The type speed can be customized as well',
         ]}
         loop={true}
-        multiTextDelay={1000}
+        nextTextDelay={1000}
         typeSpeed={30}
       />
 ```
@@ -88,7 +88,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 - multiText (array of string): Required in multi text mode
 
-- multiTextDelay (must be a number): delay before each text is erased in multi text display in milli seconds.
+- nextTextDelay (must be a number): delay before each text is erased in multi text or looped display in milli seconds.
 
 - loop: (a boolean): if true, continuously cycle through the text. Default: false
 

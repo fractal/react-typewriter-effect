@@ -9,7 +9,7 @@ class TypeWriterEffect extends Component {
     hideCursor: true,
     animate: false,
     typeSpeedDelay: null,
-    multiTextDelay: null,
+    nextTextDelay: null,
     eraseSpeedDelay: null,
     startDelay: null,
     scrollAreaIsSet: null,
@@ -32,11 +32,12 @@ class TypeWriterEffect extends Component {
       });
       let text = "";
       const typeSpeedDelay = new delay(this.props.typeSpeed || 120);
-      const multiTextDelay =
-        this.props.multiText && new delay(this.props.multiTextDelay || 2000);
+      const nextTextDelay =
+        (this.props.multiText || this.state.looping) &&
+        new delay(this.props.nextTextDelay || 2000);
       this.setState({
         typeSpeedDelay,
-        multiTextDelay,
+        nextTextDelay,
       });
       for (let char = 0; char < textArr.length; char++) {
         await typeSpeedDelay.getPromise();
@@ -48,7 +49,8 @@ class TypeWriterEffect extends Component {
       this.setState({
         blink: true,
       });
-      this.props.multiText && (await multiTextDelay.getPromise());
+      (this.props.multiText || this.state.looping) &&
+        (await nextTextDelay.getPromise());
       (erase > 0 || this.state.looping) && (await this.eraseText(text));
     }
   };
@@ -131,7 +133,7 @@ class TypeWriterEffect extends Component {
     this.state.startDelay && this.state.startDelay.cancel();
     this.state.eraseSpeedDelay && this.state.eraseSpeedDelay.cancel();
     this.state.typeSpeedDelay && this.state.typeSpeedDelay.cancel();
-    this.state.multiTextDelay && this.state.multiTextDelay.cancel();
+    this.state.nextTextDelay && this.state.nextTextDelay.cancel();
   }
 
   render() {
