@@ -13,7 +13,7 @@ class TypeWriterEffect extends Component {
     eraseSpeedDelay: null,
     startDelay: null,
     scrollAreaIsSet: null,
-    loop: false,
+    looping: false,
   };
 
   myRef = createRef();
@@ -49,7 +49,7 @@ class TypeWriterEffect extends Component {
         blink: true,
       });
       this.props.multiText && (await multiTextDelay.getPromise());
-      (erase > 0 || this.props.loop) && (await this.eraseText(text));
+      (erase > 0 || this.state.looping) && (await this.eraseText(text));
     }
   };
 
@@ -83,9 +83,11 @@ class TypeWriterEffect extends Component {
         });
         const startDelay =
           this.props.startDelay && new delay(this.props.startDelay);
+        const looping = this.props.loop ? this.props.loop : false;
         this.setState({
           hideCursor: false,
           startDelay,
+          looping,
         });
         this.props.startDelay && (await startDelay.getPromise());
 
@@ -93,9 +95,7 @@ class TypeWriterEffect extends Component {
           this.props.multiText
             ? await this.multiTextDisplay(this.props.multiText)
             : await this.runAnimation(this.props.text);
-          console.log(this.props.multiText);
-          console.log(this.state.loop);
-        } while (this.state.loop);
+        } while (this.state.looping);
 
         this.props.hideCursorAfterText &&
           this.setState({
@@ -121,7 +121,7 @@ class TypeWriterEffect extends Component {
 
   componentWillUnmount() {
     // unsubscribe from timeouts and events
-    this.state.loop = false;
+    this.setState({ looping: false });
     this.props.scrollArea && typeof this.props.scrollArea == "object"
       ? this.props.scrollArea.removeEventListener(
           "scroll",
