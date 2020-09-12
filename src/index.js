@@ -93,7 +93,7 @@ class TypeWriterEffect extends Component {
           this.props.multiText
             ? await this.multiTextDisplay(this.props.multiText)
             : await this.runAnimation(this.props.text);
-          console.log(this.props.multiText());
+          console.log(this.props.multiText);
           console.log(this.state.loop);
         } while (this.state.loop);
 
