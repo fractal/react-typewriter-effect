@@ -86,38 +86,37 @@ class TypeWriterEffect extends Component {
         const startDelay =
           this.props.startDelay && new delay(this.props.startDelay);
         const looping = this.props.loop ? this.props.loop : false;
-        console.log(looping, "hello?");
-        this.setState({
-          hideCursor: false,
-          startDelay,
-          looping,
-        });
-        this.props.startDelay && (await startDelay.getPromise());
+        this.setState(
+          {
+            hideCursor: false,
+            startDelay,
+            looping,
+          },
+          async () => {
+            this.props.startDelay && (await startDelay.getPromise());
 
-        do {
-          console.log("heya", this.state.looping);
-          this.props.multiText
-            ? await this.multiTextDisplay(this.props.multiText)
-            : await this.runAnimation(this.props.text);
-        } while (this.state.looping);
+            do {
+              this.props.multiText
+                ? await this.multiTextDisplay(this.props.multiText)
+                : await this.runAnimation(this.props.text);
+            } while (this.state.looping);
 
-        this.props.hideCursorAfterText &&
-          this.setState({
-            hideCursor: true,
-          });
+            this.props.hideCursorAfterText &&
+              this.setState({
+                hideCursor: true,
+              });
+          }
+        );
       }
     } catch (error) {}
   };
 
   componentDidMount() {
-    console.log("are we looping?", this.props.loop);
     this.animateOnScroll();
     this.setState({ scrollAreaIsSet: false });
   }
 
   componentDidUpdate() {
-    console.log("are we looping 2?", this.props.loop);
-
     if (!this.state.scrollAreaIsSet) {
       this.setState({ scrollAreaIsSet: true });
       this.props.scrollArea && typeof this.props.scrollArea == "object"
