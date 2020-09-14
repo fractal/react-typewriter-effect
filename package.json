@@ -1,6 +1,6 @@
 {
   "name": "react-typewriter-effect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "creating a typewriter effect using react",
   "main": "dist/index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevoese/react-typewriter-effect.git"
+    "url": "git+https://github.com/rpadaki/react-typewriter-effect.git"
   },
-  "author": "Kelvin Esegbona",
+  "author": "Roshan Padaki",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kevoese/react-typewriter-effect/issues"
+    "url": "https://github.com/rpadaki/react-typewriter-effect/issues"
   },
-  "homepage": "https://github.com/kevoese/react-typewriter-effect#readme",
+  "homepage": "https://github.com/rpadaki/react-typewriter-effect#readme",
   "dependencies": {
     "react": "^16.10.2",
     "style-loader": "^1.0.0",
