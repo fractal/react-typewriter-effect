@@ -1,13 +1,13 @@
 {
   "name": "react-typewriter-effect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "creating a typewriter effect using react",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "prepare": "npm run build",
-    "build": "rimraf dist && webpack && echo \"declare module 'react-typewriter-effect';\" > dist/index.d.ts"
+    "build": "rimraf dist && webpack && cp index-template.d.ts dist/index.d.ts"
   },
   "repository": {
     "type": "git",
