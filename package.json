@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "prepare": "npm run build",
-    "build": "rimraf dist && webpack && cp index-template.d.ts dist/index.d.ts"
+    "build": "rimraf dist && webpack && copy index-template.d.ts dist/index.d.ts"
   },
   "repository": {
     "type": "git",
