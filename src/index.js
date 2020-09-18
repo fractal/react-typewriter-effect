@@ -20,8 +20,6 @@ class TypeWriterEffect extends Component {
 
   multiTextDisplay = async (arr) => {
     for (let e = 0; e < arr.length; e++) {
-      console.log(e);
-      console.log("from component");
       if (this.props.onTextChange) {
         this.props.onTextChange(e);
       }
