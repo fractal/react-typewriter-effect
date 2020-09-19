@@ -21,6 +21,7 @@ class TypeWriterEffect extends Component {
   multiTextDisplay = async (arr) => {
     for (let e = 0; e < arr.length; e++) {
       if (this.props.onTextChange) {
+        console.log(e);
         this.props.onTextChange(e);
       }
       await this.runAnimation(arr[e], arr.length - e - 1);
