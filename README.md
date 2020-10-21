@@ -1,6 +1,6 @@
-# rpadaki/react-typewriter-effect
+# mingy98/react-typewriter-effect
 
-A package that gives your text a typing effect, with extra features like looping multitext! Forked from [kevoese/react-typewriter-effect](https://github.com/kevoese/react-typewriter-effect).
+A package that gives your text a typing effect, with extra features like looping multitext and callback functions on text change! Forked from [kevoese/react-typewriter-effect](https://github.com/kevoese/react-typewriter-effect).
 
 ## Description
 
