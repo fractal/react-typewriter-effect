@@ -49,7 +49,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 ![single text display](./images/textDisplay.gif)
 
-### For a multiiple text display
+### For a multiple text display
 
 Set the multiText props to an array of strings which are displayed sequentially
 
