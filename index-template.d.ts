@@ -1,1 +1,1 @@
-declare module 'react-typewriter-effect';
+declare module "react-typewriter-effect";

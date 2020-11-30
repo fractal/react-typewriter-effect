@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rpadaki/react-typewriter-effect.git"
+    "url": "git+https://github.com/fractal/react-typewriter-effect.git"
   },
-  "author": "Roshan Padaki",
+  "author": "Fractal Computers, Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rpadaki/react-typewriter-effect/issues"
+    "url": "https://github.com/fractal/react-typewriter-effect/issues"
   },
-  "homepage": "https://github.com/rpadaki/react-typewriter-effect#readme",
+  "homepage": "https://github.com/fractal/react-typewriter-effect#readme",
   "dependencies": {
     "react": "^16.10.2",
     "style-loader": "^1.0.0",
