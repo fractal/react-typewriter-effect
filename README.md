@@ -1,4 +1,4 @@
-# fractal/react-typewriter-effect
+# Reason for Fork
 
 A package that gives your text a typing effect, with extra features like looping multitext and callback functions on text change! Forked from [kevoese/react-typewriter-effect](https://github.com/kevoese/react-typewriter-effect).
 
@@ -49,7 +49,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 ![single text display](./images/textDisplay.gif)
 
-### For a multiiple text display
+### For a multiple text display
 
 Set the multiText props to an array of strings which are displayed sequentially
 
