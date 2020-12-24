@@ -1,14 +1,18 @@
-# Reason for Fork
+# Fractal React Typewriter Effect
 
-A package that gives your text a typing effect, with extra features like looping multitext and callback functions on text change! Forked from [kevoese/react-typewriter-effect](https://github.com/kevoese/react-typewriter-effect).
+This is a package that gives your text a typing effect, with extra features like looping multitext and callback functions on text change! Forked from [kevoese/react-typewriter-effect](https://github.com/kevoese/react-typewriter-effect).
+
+**Reason for Fork**
+
+Fix a few bugs to make the package loop multitext and display properly over multilines text.
 
 ## Description
 
-This package lets you create a typewriting effect for text elements
+This package lets you create a typewriting effect for text elements.
 
 ![Typewriter description](./images/singleTextDisplay1.gif)
 
-- Typewriter Effect animates when component is in view. By default it uses the document reference to check if component is in view or not. But you can pass the ref object which is scrollable to the scollArea props.
+- Typewriter Effect animates when the component is in view. By default, it uses the document reference to check if the component is in view or not; but you can pass the `ref` object which is scrollable to the `scollArea` props.
 
 **For example**
 
@@ -19,13 +23,13 @@ const myRef = document.querySelector('.scrollable-div')
 ```
 
 **Otherwise**
-if scrollArea is not defined, document reference object is used.
+If `scrollArea` is not defined, the document reference object is used.
 
 ## Set up
 
-To use package, Start by installing package
+To use the package, start by installing the package with:
 
-- npm i react-typewriter-effect
+`npm i react-typewriter-effect`
 
 **on your react project file**
 
