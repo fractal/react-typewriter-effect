@@ -12,26 +12,25 @@ This package lets you create a typewriting effect for text elements.
 
 ![Typewriter description](./images/singleTextDisplay1.gif)
 
-- Typewriter Effect animates when the component is in view. By default, it uses the document reference to check if the component is in view or not; but you can pass the `ref` object which is scrollable to the `scollArea` props.
+Typewriter Effect animates when the component is in view. By default, it uses the document reference to check if the component is in view or not; but you can pass the `ref` object which is scrollable to the `scollArea` props.
 
 **For example**
 
 ```
 const myRef = document.querySelector('.scrollable-div')
 
-<TypeWriterEffect width="230" trackWidth="13" percentage={score} scrollArea={myRef} />
+<TypeWriterEffect width="230" trackWidth="13" percentage={score} scrollArea={myRef}/>
 ```
 
 **Otherwise**
+
 If `scrollArea` is not defined, the document reference object is used.
 
 ## Set up
 
-To use the package, start by installing the package with:
+To use the package, start by installing the package on your React project file with:
 
 `npm i react-typewriter-effect`
-
-**on your react project file**
 
 ### For a single text display
 
@@ -55,7 +54,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 ### For a multiple text display
 
-Set the multiText props to an array of strings which are displayed sequentially
+Set the `multiText` props to an array of strings which are displayed sequentially.
 
 ```
 import TypeWriterEffect from 'react-typewriter-effect';
