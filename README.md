@@ -89,22 +89,22 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 ## Properties and description
 
-- text (must be a string): Required in single text display mode. The text in string.
+- `text` (must be a string): Required in single text display mode. The text in string.
 
-- multiText (array of string): Required in multitext mode.
+- `multiText` (array of string): Required in multitext mode.
 
-- nextTextDelay (must be a number): Delay before each text is erased in multitext or looped display, in milliseconds.
+- `nextTextDelay` (must be a number): Delay before each text is erased in multitext or looped display, in milliseconds.
 
-- loop (a boolean): If true, continuously cycle through the text. Default: false.
+- `loop` (a boolean): If true, continuously cycle through the text. Default: false.
 
-- typeSpeed (must be a number): Speed of typing, in milliseconds.
+- `typeSpeed` (must be a number): Speed of typing, in milliseconds.
 
-- startDelay (must be a number): Delay before the animation starts, in milliseconds.
+- `startDelay` (must be a number): Delay before the animation starts, in milliseconds.
 
-- hideCursorAfterText (a boolean): It removes the cursor after typing.
+- `hideCursorAfterText` (a boolean): It removes the cursor after typing.
 
-- cursorColor (must be a string): Color of the cursor.
+- `cursorColor` (must be a string): Color of the cursor.
 
-- textStyle (must be an object): Custom CSS styles that can be applied to the text in this object.
+- `textStyle` (must be an object): Custom CSS styles that can be applied to the text in this object.
 
-- scrollArea (must be a DOM element): The scrollable area. By default, it is `document`.
+- `scrollArea` (must be a DOM element): The scrollable area. By default, it is `document`.
