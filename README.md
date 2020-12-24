@@ -30,7 +30,9 @@ If `scrollArea` is not defined, the document reference object is used.
 
 To use the package, start by installing the package on your React project file with:
 
-`npm i react-typewriter-effect`
+```
+npm i react-typewriter-effect
+```
 
 ### For a single text display
 
@@ -87,22 +89,22 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 ## Properties and description
 
-- text (must be a string): Required in sigle text display mode. The text in string.
+- text (must be a string): Required in single text display mode. The text in string.
 
-- multiText (array of string): Required in multi text mode
+- multiText (array of string): Required in multitext mode.
 
-- nextTextDelay (must be a number): delay before each text is erased in multi text or looped display in milli seconds.
+- nextTextDelay (must be a number): Delay before each text is erased in multitext or looped display, in milliseconds.
 
-- loop: (a boolean): if true, continuously cycle through the text. Default: false
+- loop (a boolean): If true, continuously cycle through the text. Default: false.
 
-- typeSpeed (must be a number): Speed of typing in milli seconds,
+- typeSpeed (must be a number): Speed of typing, in milliseconds.
 
-- startDelay (must be a number): Delay before animation starts in milli seconds
+- startDelay (must be a number): Delay before the animation starts, in milliseconds.
 
-- hideCursorAfterText (a boolean): it removes cursor after typing.
+- hideCursorAfterText (a boolean): It removes the cursor after typing.
 
-- cursorColor (must be a string): color of the cursor
+- cursorColor (must be a string): Color of the cursor.
 
-- textStyle (must be an object): custom css styles can be applied to the text in this object.
+- textStyle (must be an object): Custom CSS styles that can be applied to the text in this object.
 
-- scrollArea (must be a dom element): the scrollable area. By default it is document
+- scrollArea (must be a DOM element): The scrollable area. By default, it is `document`.
