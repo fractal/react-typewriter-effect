@@ -22,7 +22,7 @@
   "dependencies": {
     "react": "^16.10.2",
     "style-loader": "^1.0.0",
-    "webpack": "^4.41.2"
+    "webpack": "^4.44.2"
   },
   "files": [
     "dist/*"
