@@ -22,7 +22,7 @@
   "dependencies": {
     "react": "^16.10.2",
     "style-loader": "^1.0.0",
-    "webpack": "^4.44.2"
+    "webpack": "^4.46.0"
   },
   "files": [
     "dist/*"
@@ -31,12 +31,12 @@
     "react": "^16.10.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@babel/runtime": "^7.6.3",
+    "@babel/core": "^7.13.1",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.6",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/runtime": "^7.13.6",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
