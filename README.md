@@ -4,7 +4,7 @@ This is a package that gives your text a typing effect, with extra features like
 
 **Reason for Fork**
 
-Fix a few bugs to make the package loop multitext and display properly over multilines text.
+Fix a few bugs to make the package loop multitext and display properly over multilines text. Note that we, Fractal, no longer use this package but instead use our own internal version within our internal TypeScript library. This package is left here for those who find use from it, but will not be maintained.
 
 ## Description
 
